@@ -1,0 +1,62 @@
+# Credit Card Fraud Detection Using Machine Learning
+
+## Abstract
+Credit card fraud is a significant problem, with billions of dollars lost each year. Machine learning can be used to detect credit card fraud by identifying patterns indicative of fraudulent transactions. Credit card fraud refers to the physical loss of a credit card or the loss of sensitive credit card information. Various machine learning algorithms can be applied for fraud detection. This project proposes the development of a machine-learning model to detect credit card fraud. The model will be trained on a dataset of historical credit card transactions and evaluated using a holdout dataset of unseen transactions.
+
+**Keywords:** Credit Card Fraud Detection, Fraud Detection, Fraudulent Transactions, K-Nearest Neighbors, Support Vector Machine, Logistic Regression, Decision Tree.
+
+---
+
+## Overview
+With the increasing use of credit cards in daily life, ensuring the security and safety of customers has become crucial for credit card companies. According to 2021 credit card statistics, there were approximately **2.8 billion** credit card users worldwide in 2019, with 70% owning a single card.
+
+Reports indicate that credit card fraud in the U.S. increased by **44.7%** in 2020. Fraud can be categorized into two types:
+1. **New Account Fraud:** Where a thief opens a new credit card account under a victim's name.
+2. **Existing Account Fraud:** Where a thief uses stolen credit card information to conduct transactions.
+
+The rise in fraudulent activities motivated us to explore analytical approaches using machine learning to detect fraudulent credit card transactions.
+
+---
+
+## Project Goals
+The primary objective of this project is to detect fraudulent credit card transactions. Accurate detection is essential to ensure that customers are not wrongly charged for unauthorized purchases. Various machine learning techniques will be applied, and their outcomes compared to determine the most effective model. Graphs and statistical results will be presented for clarity.
+
+Additionally, previous research and existing techniques will be reviewed to enhance understanding and propose further improvements.
+
+---
+
+## Data Source
+The dataset for this project was obtained from an open-source platform, **Kaggle.com**. It contains transaction data from European credit card users over a period of **two days** in 2013.
+
+- **Number of Rows:** 284,808
+- **Number of Attributes:** 31
+  - **28 Features:** Numeric variables transformed using PCA (Principal Component Analysis) to ensure confidentiality.
+  - **Time:** Elapsed seconds between the first and subsequent transactions.
+  - **Amount:** The monetary value of each transaction.
+  - **Class:** A binary variable, where **1** represents a fraudulent transaction and **0** represents a non-fraudulent transaction.
+
+**Dataset Source:** [Kaggle Dataset](https://www.kaggle.com)
+
+---
+
+## Algorithms Used
+To detect fraudulent transactions, the following machine learning algorithms were applied:
+- **K-Nearest Neighbor (KNN)**
+- **Logistic Regression (LR)**
+- **Support Vector Machine (SVM)**
+- **Decision Tree (DT)**
+
+---
+
+## Future Work
+Future improvements could include:
+- Applying the model to diverse datasets of varying sizes and data types.
+- Adjusting the data splitting ratio for better model performance.
+- Using location-based data from telecom sources to verify cardholder presence during transactions.
+- Incorporating advanced ensemble techniques or deep learning models.
+
+---
+
+## Conclusion
+The goal of this project was to determine the most effective machine learning model for credit card fraud detection. After implementing and evaluating multiple models, the **KNN** and **Decision Tree** algorithms demonstrated the highest accuracy, scoring **100%** on the dataset. This enhanced detection mechanism can significantly improve customer satisfaction by providing a safer and more secure banking experience.
+
